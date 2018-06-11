@@ -1,0 +1,30 @@
+// Styling for the team section
+section#team {
+  padding: 2rem 0 8rem 0;
+}
+
+.team-header {
+  padding-bottom: 3rem;
+}
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center;
+  img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid $white;
+  }
+  h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none;
+  }
+  p {
+    margin-top: 0;
+  }
+
+  .icn-size {
+    font-size: 1.75rem;
+  }
+}

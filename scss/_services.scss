@@ -1,0 +1,41 @@
+// Styling for the "About" section
+.service-box {
+  max-width: 400px;
+}
+
+.service-box p {
+  font-size: 0.9rem;
+}
+
+section#services {
+  padding: 8rem 0 2rem 0;
+}
+
+// Styling for the services section
+.service {
+  //max-width: 400px;
+  position: relative;
+  padding: 40px 20px 40px 70px;
+  margin: 15px 0px;
+  border: 1px solid #EEE;
+}
+
+.service i {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  font-size: 32px;
+  color: $primary;
+  border-radius: 50%;
+}
+
+.service h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.service p {
+  font-size: 0.85rem;
+  color: #868F9B;
+}
+
