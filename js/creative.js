@@ -1,6 +1,11 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Preloader
+  $(window).on('load', function() {
+      $("#preloader").delay(600).fadeOut();
+  });
+
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -13,6 +18,20 @@
         return false;
       }
     }
+  });
+
+  $("#nav .main-nav a[href^='#']").on('click', function(e) {
+      e.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+          scrollTop: $(this.hash).offset().top
+      }, 600);
+  });
+
+  $('#back-to-top').on('click', function(){
+      $('body,html').animate({
+          scrollTop: 0
+      }, 600);
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
@@ -55,6 +74,18 @@
     scale: 0.3,
     distance: '0px'
   }, 300);
+
+  ///////////////////////////
+  // On Scroll
+  $(window).on('scroll', function() {
+      var wScroll = $(this).scrollTop();
+
+      // Fixed nav
+      wScroll > 1 ? $('#nav').addClass('fixed-nav') : $('#nav').removeClass('fixed-nav');
+
+      // Back To Top Appear
+      wScroll > 700 ? $('#back-to-top').fadeIn() : $('#back-to-top').fadeOut();
+  });
 
   // Magnific popup calls
   $('.popup-gallery').magnificPopup({
