@@ -28,7 +28,8 @@
         font-size: .9rem;
         font-weight: 700;
         text-transform: uppercase;
-        color: $gray-900;
+        color: $gray-200;
+        text-align: center;
         &:hover {
           color: $white;
         }
@@ -70,7 +71,7 @@
     }
     &.navbar-shrink {
       padding: 0;
-      border-bottom: 1px solid fade-out($gray-900, .9);
+      border-bottom: 1px solid fade-out($gray-100, .9);
       background-color: $black;
       .navbar-brand {
         color: $primary;

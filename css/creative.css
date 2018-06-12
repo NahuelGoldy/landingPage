@@ -100,7 +100,8 @@ body {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #212529; }
+    color: #e9ecef;
+    text-align: center; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
       color: #fff; }
@@ -135,7 +136,7 @@ body {
           color: #C00F00; }
       #mainNav.navbar-shrink {
         padding: 0;
-        border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+        border-bottom: 1px solid rgba(246, 246, 246, 0.1);
         background-color: #000; }
         #mainNav.navbar-shrink .navbar-brand {
           color: #C00F00; }
@@ -285,6 +286,9 @@ section#services {
   .btn-primary:active, .btn-primary:focus {
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important; }
 
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important; }
+
 section#contact .form-group {
   margin-bottom: 25px; }
   section#contact .form-group input,
@@ -340,6 +344,8 @@ section#team {
     color: #fff; }
   section#team .team-header {
     padding-bottom: 3rem; }
+  section#team .team-intro {
+    margin: 0 4%; }
   section#team .team-member {
     margin-bottom: 50px;
     text-align: center; }
