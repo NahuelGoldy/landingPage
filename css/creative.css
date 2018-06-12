@@ -215,6 +215,10 @@ section#services {
   font-size: 0.85rem;
   color: #868F9B; }
 
+.services-margin {
+  margin-left: 3%;
+  margin-right: 3%; }
+
 .portfolio-box {
   position: relative;
   display: block;
