@@ -344,6 +344,9 @@ section#team {
     color: #fff; }
   section#team .team-header {
     padding-bottom: 3rem; }
+  section#team .row-custom {
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
   section#team .team-intro {
     margin: 0 4%; }
   section#team .team-member {
