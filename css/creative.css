@@ -99,11 +99,12 @@ body {
     font-size: .9rem;
     font-weight: 700;
     text-transform: uppercase;
-    color: #e9ecef;
     text-align: center; }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-      color: #fff; }
+      color: #fff;
+      -webkit-animation: circle 1.5s ease-in forwards;
+    }
     #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
       color: #C00F00 !important;
@@ -215,9 +216,15 @@ section#services {
   font-size: 0.85rem;
   color: #868F9B; }
 
+@media (min-width: 770px) {
+  .services-margin {
+    margin-left: 3%;
+    margin-right: 3%; }
+}
+
 .services-margin {
-  margin-left: 3%;
-  margin-right: 3%; }
+  margin-left: 0%;
+  margin-right: 0%; }
 
 .portfolio-box {
   position: relative;
